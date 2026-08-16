@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #f5f7fb;
+
+    color: #1f2937;
+}
+
+/* NAVBAR */
+
+.customer-navbar {
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    min-height: 70px;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 22px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    color: #111827;
+}
+
+.navbar-menu {
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+
+    color: #4b5563;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.2s;
+}
+
+.navbar-menu a:hover {
+    color: #2563eb;
+}
+
+.navbar-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 14px;
+}
+
+/* MAIN */
+
+.customer-main {
+    min-height: calc(100vh - 70px);
+
+    padding: 35px;
+}
+
+/* FOOTER */
+
+.customer-footer {
+    margin-top: 50px;
+
+    padding: 40px 0 20px;
+
+    background: #111827;
+
+    color: #d1d5db;
+}
+
+.customer-footer h5,
+.customer-footer h6 {
+    color: #ffffff;
+}
+
+.customer-footer a {
+    display: block;
+
+    color: #d1d5db;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+}
+
+.customer-footer a:hover {
+    color: #ffffff;
+}
+
+/* DASHBOARD CARDS */
+
+.dashboard-card {
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-card h6 {
+    color: #6b7280;
+
+    margin-bottom: 10px;
+}
+
+.dashboard-card h2 {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .navbar-menu {
+        gap: 12px;
+    }
+
+    .navbar-user span {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar-container {
+        flex-wrap: wrap;
+
+        padding: 15px;
+    }
+
+    .navbar-menu {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        padding-top: 15px;
+
+        padding-bottom: 5px;
+    }
+
+    .customer-main {
+        padding: 20px;
+    }
+
+}
